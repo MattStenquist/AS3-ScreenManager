@@ -1,10 +1,15 @@
 /*
-	AUTHHOR : MATT STENQUIST
+	AUTHOR : MATT STENQUIST
 	LICENSE: DO WHATEVER THE FUCK YOU WANT
 */
 
 package managers
 {
+	/*
+	//.... If you're not using Starling then just subsitute in the normal Flash libraries 
+	//....import flash.display.Sprite;
+    	//....import flash.events.Event;
+	*/	
 	import starling.display.Sprite;
 	import starling.events.Event;
 
