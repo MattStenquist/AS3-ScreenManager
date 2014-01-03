@@ -26,8 +26,8 @@ package managers
 	public class ScreenManager extends Sprite
 	{
 		//##SCREEN OBJECTS---------------------------------------------------------|
-		public var _studio:StudioScreen;			//..STUDIO SCREEN
-		public var _overlay:GameOverlay;			//..FX OVERLAY
+		public var _studio:StudioScreen; 			//..STUDIO SCREEN
+		public var _overlay:GameOverlay; 			//..FX OVERLAY
 		public var _saveSlot:ChooseSave;			//..SAVE SLOT 
 		public var _adScreen:AdScreen;				//..AD SCREEN
 		public var _menuStartup:MenuStartup;			//..MENU STARTUP
