@@ -9,6 +9,7 @@ package managers
 	//.... If you're not using Starling then just subsitute in the normal Flash libraries 
 	//....import flash.display.Sprite;
 	//....import flash.events.Event;
+	//....Don't forget to edit the Trace statements
 	*/	
 	
 	import starling.display.Sprite;
@@ -93,37 +94,37 @@ package managers
 		//-------------------------------------------------------------------------|
 		//--ADVERTISEMENT SCREEN
 		public function screenAd() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO AD SCREEN");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_adScreen = new AdScreen();
 			this.addChild(_adScreen);
 		}
 		//--STUDIO SCREEN (LOGOS)
 		public function screenStudio() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO STUDIO SCREEN");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_studio = new StudioScreen();
 			this.addChild(_studio);
 		}
 		//--FX OVERLAY SCREEN
 		public function screenOverlay() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO OVERLAY FX");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_overlay = new GameOverlay();
 			this.addChild(_overlay);
 		}
 		//--SAVE SLOT SCREEN
 		public function screenSaveSlot() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO SAVE SLOT");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_saveSlot = new ChooseSave();
 			this.addChild(_saveSlot);
 		}
 		//--MENU STARTUP SCREEN
 		public function screenMenuStart() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO MENU STARTUP");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_menuStartup = new MenuStartup();
 			this.addChild(_menuStartup);
 		}
 		//--MENU DIFFICULTY SCREEN
 		public function screenDifficulty() {
-			trace("[AXION ENGINE] :: SCREEN SWITCHED TO MENU DIFFICULTY");
+			trace("[ENGINE] :: THIS SCREEN WAS CREATED");
 			_menuDifficulty = new MenuDifficulty();
 			this.addChild(_menuDifficulty);
 		}
