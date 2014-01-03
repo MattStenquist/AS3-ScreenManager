@@ -11,6 +11,7 @@ package managers
 	*....import flash.events.Event;
 	*....Don't forget to edit the Trace statements
 	*....You also don't need to have a stageSetup function. 
+	*.....You can also just make cases functions.
 	*/	
 	
 	import starling.display.Sprite;
