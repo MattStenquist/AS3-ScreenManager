@@ -51,7 +51,7 @@ package managers
 			this.addEventListener(starling.events.Event.ADDED_TO_STAGE, stageSetup);
 		}
 		private function stageSetup(event:Event):void {
-			trace("[AXION ENGINE] :: **** STUDIO MANAGER ACTIVE");
+			trace("[ENGINE] :: **** SCREEN MANAGER ACTIVE");
 			this.removeEventListener(Event.ADDED_TO_STAGE, stageSetup);
 		}
 		//-------------------------------------------------------------------------|
