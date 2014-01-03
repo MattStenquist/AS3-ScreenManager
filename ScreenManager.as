@@ -6,11 +6,11 @@
 package managers
 {
 	/*
-	//.... If you're not using Starling then just subsitute in the normal Flash libraries 
-	//....import flash.display.Sprite;
-	//....import flash.events.Event;
-	//....Don't forget to edit the Trace statements
-	//....You also don't need to have a stageSetup function. 
+	*.... If you're not using Starling then just subsitute in the normal Flash libraries 
+	*....import flash.display.Sprite;
+	*....import flash.events.Event;
+	*....Don't forget to edit the Trace statements
+	*....You also don't need to have a stageSetup function. 
 	*/	
 	
 	import starling.display.Sprite;
