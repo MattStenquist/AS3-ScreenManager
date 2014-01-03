@@ -18,21 +18,21 @@ package managers
 	public class ScreenManager extends Sprite
 	{
 		//##SCREEN OBJECTS---------------------------------------------------------|
-		public var _studio:StudioScreen;						//..STUDIO SCREEN
-		public var _overlay:GameOverlay;						//..FX OVERLAY
-		public var _saveSlot:ChooseSave;						//..SAVE SLOT 
-		public var _adScreen:AdScreen;							//..AD SCREEN
-		public var _menuStartup:MenuStartup;					//..MENU STARTUP
-		public var _menuDifficulty:MenuDifficulty;				//..MENU DIFFICULTY
+		public var _studio:StudioScreen;			//..STUDIO SCREEN
+		public var _overlay:GameOverlay;			//..FX OVERLAY
+		public var _saveSlot:ChooseSave;			//..SAVE SLOT 
+		public var _adScreen:AdScreen;				//..AD SCREEN
+		public var _menuStartup:MenuStartup;			//..MENU STARTUP
+		public var _menuDifficulty:MenuDifficulty;		//..MENU DIFFICULTY
 		//-------------------------------------------------------------------------|
 		//##SCREEN STATES----------------------------------------------------------|
-		public var state:int;									//..SPECIFY STATE 
-		public const AD:int = 0;								//..AD STATE
-		public const STUDIO:int = 1;							//..STUDIO STATE
-		public const STARTMENU:int = 2;							//..START STATE
-		public const DIFFICULTY:int = 3;						//..DIFF STATE
-		public const OVERLAY:int = 4;							//..OVERLAY STATE
-		public const SAVESLOT:int = 5;							//..SAVESLOT STATE
+		public var state:int;					//..SPECIFY STATE 
+		public const AD:int = 0;				//..AD STATE
+		public const STUDIO:int = 1;				//..STUDIO STATE
+		public const STARTMENU:int = 2;				//..START STATE
+		public const DIFFICULTY:int = 3;			//..DIFF STATE
+		public const OVERLAY:int = 4;				//..OVERLAY STATE
+		public const SAVESLOT:int = 5;				//..SAVESLOT STATE
 		//-------------------------------------------------------------------------|
 
 		//-------------------------------------------------------------------------|
