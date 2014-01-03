@@ -1,3 +1,8 @@
+/*
+	AUTHHOR : MATT STENQUIST
+	LICENSE: DO WHATEVER THE FUCK YOU WANT
+*/
+
 package managers
 {
 	import starling.display.Sprite;
