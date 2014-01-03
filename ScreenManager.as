@@ -10,6 +10,7 @@ package managers
 	//....import flash.display.Sprite;
     	//....import flash.events.Event;
 	*/	
+	
 	import starling.display.Sprite;
 	import starling.events.Event;
 
