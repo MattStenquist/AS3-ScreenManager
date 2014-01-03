@@ -62,7 +62,7 @@ package managers
 		//##HANDLE STATE|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 		//-------------------------------------------------------------------------|
 		public function handleState():void {
-			state =3 ; 	//SET STATE	 				
+			state = AD; 	//SET STATE ("INT OR WORD")	 				
 			switch(state) {										
 				case AD:  
 				screenAd(); //0
