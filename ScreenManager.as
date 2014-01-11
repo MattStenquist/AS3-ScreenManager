@@ -1,38 +1,49 @@
+package code.managers
 /*
-	AUTHHOR : MATT STENQUIST
-	LICENSE: DO WHATEVER THE FUCK YOU WANT
-*/
-
-package managers
+        * AUTHOR : MATT STENQUIST
+        * LICENSE: DO WHATEVER YOU PLEASE
+*/ 
 {
+    /*
+   		*If you're not using Starling then just subsitute in the normal Flash libraries 
+    	*....import flash.display.Sprite;
+   		*....import flash.events.Event;
+    	*...
+    	*..
+    	*.
+    	* Don't forget to edit the Trace statements
+    	* You also don't need to have a stageSetup function. 
+   		* You can also just make cases functions.
+    */        
 	import starling.display.Sprite;
 	import starling.events.Event;
-
-	import screens.StudioScreen;
-	import screens.GameOverlay;
-	import screens.AdScreen;
-	import screens.MenuStartup;
-	import screens.MenuDifficulty;
-	import screens.ChooseSave;
+	import flash.system.*;
+	
+	import code.screens.StudioScreen;
+	import code.screens.GameOverlay;
+	import code.screens.AdScreen;
+	import code.screens.MenuStartup;
+	import code.screens.MenuDifficulty;
+	import code.screens.ChooseSave;
 
 	public class ScreenManager extends Sprite
 	{
 		//##SCREEN OBJECTS---------------------------------------------------------|
-		public var _studio:StudioScreen;			//..STUDIO SCREEN
-		public var _overlay:GameOverlay;			//..FX OVERLAY
-		public var _saveSlot:ChooseSave;			//..SAVE SLOT 
-		public var _adScreen:AdScreen;				//..AD SCREEN
-		public var _menuStartup:MenuStartup;			//..MENU STARTUP
-		public var _menuDifficulty:MenuDifficulty;		//..MENU DIFFICULTY
+		public var _studio:StudioScreen;						//..STUDIO SCREEN
+		public var _overlay:GameOverlay;						//..FX OVERLAY
+		public var _saveSlot:ChooseSave;						//..SAVE SLOT 
+		public var _adScreen:AdScreen;							//..AD SCREEN
+		public var _menuStartup:MenuStartup;					//..MENU STARTUP
+		public var _menuDifficulty:MenuDifficulty;				//..MENU DIFFICULTY
 		//-------------------------------------------------------------------------|
 		//##SCREEN STATES----------------------------------------------------------|
-		public var state:int;					//..SPECIFY STATE 
-		public const AD:int = 0;				//..AD STATE
-		public const STUDIO:int = 1;				//..STUDIO STATE
-		public const STARTMENU:int = 2;				//..START STATE
-		public const DIFFICULTY:int = 3;			//..DIFF STATE
-		public const OVERLAY:int = 4;				//..OVERLAY STATE
-		public const SAVESLOT:int = 5;				//..SAVESLOT STATE
+		public static var STATE:uint = 0;						//..SPECIFY STATE 
+		public const AD:int = 0;								//..AD STATE
+		public const STUDIO:int = 1;							//..STUDIO STATE
+		public const STARTMENU:int = 2;							//..START STATE
+		public const DIFFICULTY:int = 3;						//..DIFF STATE
+		public const OVERLAY:int = 4;							//..OVERLAY STATE
+		public const SAVESLOT:int = 5;							//..SAVESLOT STATE
 		//-------------------------------------------------------------------------|
 
 		//-------------------------------------------------------------------------|
@@ -52,9 +63,8 @@ package managers
 		//-------------------------------------------------------------------------|
 		//##HANDLE STATE|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 		//-------------------------------------------------------------------------|
-		public function handleState():void {
-			state =3 ; 	//SET STATE	 				
-			switch(state) {										
+		public function handleState(STATE:int):void {			
+			switch(STATE) {		
 				case AD:  
 				screenAd(); //0
 				break;
@@ -121,13 +131,13 @@ package managers
 			_menuDifficulty = new MenuDifficulty();
 			this.addChild(_menuDifficulty);
 		}
-		public function removeScreens():void {
+		public function removeAll():void {
 			this.removeChild(_menuDifficulty);
 			this.removeChild(_menuStartup);
 			this.removeChild(_saveSlot);
 			this.removeChild(_studio);
 			this.removeChild(_adScreen);
-			//System.gc();
+			System.gc();
 			super.dispose();
 		}
 	}
